@@ -1109,6 +1109,31 @@ function toggleForm(id){
 }
 
 // ─── Boot ─────────────────────────────────────────────────────
+// Expose all functions to global scope (needed for onclick handlers with type=module)
+window.goAdminLogin = goAdminLogin;
+window.enterPin = enterPin;
+window.deletePin = deletePin;
+window.enterAdminPin = enterAdminPin;
+window.deleteAdminPin = deleteAdminPin;
+window.adminTab = adminTab;
+window.toggleForm = toggleForm;
+window.addChild = addChild;
+window.removeChild = removeChild;
+window.resetToday = resetToday;
+window.resetWeek = resetWeek;
+window.resetMonth = resetMonth;
+window.openEditChild = openEditChild;
+window.closeEditChild = closeEditChild;
+window.saveEditChild = saveEditChild;
+window.addChore = addChore;
+window.removeChore = removeChore;
+window.openEditChore = openEditChore;
+window.closeEditChore = closeEditChore;
+window.saveEditChore = saveEditChore;
+window.addReward = addReward;
+window.removeReward = removeReward;
+window.closeConfirm = closeConfirm;
+
 renderPinDots('pin-dots','',4);
 renderPinDots('admin-pin-dots','',4);
 loadFamily();
