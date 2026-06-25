@@ -1110,6 +1110,8 @@ function toggleForm(id){
 
 // ─── Boot ─────────────────────────────────────────────────────
 // Expose all functions to global scope (needed for onclick handlers with type=module)
+window.goScreen = goScreen;
+window.renderHome = renderHome;
 window.goAdminLogin = goAdminLogin;
 window.enterPin = enterPin;
 window.deletePin = deletePin;
